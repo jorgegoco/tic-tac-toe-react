@@ -7,48 +7,57 @@ exports[`clicking on a winning square highlights the winning squares 1`] = `
 >
   <button
     class="square winning"
+    data-testid="square"
     type="button"
   >
     X
   </button>
   <button
     class="square winning"
+    data-testid="square"
     type="button"
   >
     X
   </button>
   <button
     class="square winning"
+    data-testid="square"
     type="button"
   >
     X
   </button>
   <button
     class="square "
+    data-testid="square"
     type="button"
   >
     O
   </button>
   <button
     class="square "
+    data-testid="square"
     type="button"
   >
     O
   </button>
   <button
     class="square "
+    data-testid="square"
     type="button"
   />
   <button
     class="square "
+    data-testid="square"
     type="button"
   />
   <button
     class="square "
+    data-testid="square"
     type="button"
   />
   <button
     class="square "
+    data-testid="square"
     type="button"
   />
 </div>

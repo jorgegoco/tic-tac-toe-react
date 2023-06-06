@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import './square.css';
 
 const Square = ({ value, onClick, isWinning }) => (
-  <button className={`square ${isWinning ? 'winning' : ''}`} type="button" onClick={onClick}>
+  <button
+    type="button"
+    className={`square ${isWinning ? 'winning' : ''}`}
+    onClick={onClick}
+    data-testid="square"
+  >
     {value}
   </button>
 );
