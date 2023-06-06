@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './square.css';
 
-const Square = ({ value, onClick, isWinning }) => (
+const Square = ({ value = '', onClick, isWinning }) => (
   <button
     type="button"
     className={`square ${isWinning ? 'winning' : ''}`}
@@ -14,9 +14,13 @@ const Square = ({ value, onClick, isWinning }) => (
 );
 
 Square.propTypes = {
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   onClick: PropTypes.func.isRequired,
   isWinning: PropTypes.bool.isRequired,
+};
+
+Square.defaultProps = {
+  value: '',
 };
 
 export default Square;
