@@ -1,0 +1,45 @@
+.game {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.game-header {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.game-moves {
+  margin-top: 20px;
+}
+
+.game-moves li {
+  margin-bottom: 5px;
+}
+
+/* Media query for screens smaller than 375px */
+@media (max-width: 374px) {
+  .game {
+    width: 90%;
+    max-width: 320px;
+    padding: 0 5%;
+  }
+}
+
+/* Media query for screens between 375px and 767px */
+@media (min-width: 375px) and (max-width: 767px) {
+  .game {
+    width: 90%;
+    max-width: 600px;
+    padding: 0 5%;
+  }
+}
+
+/* Media query for screens larger than 768px */
+@media (min-width: 768px) {
+  .game {
+    width: 80%;
+    max-width: 800px;
+    padding: 0 10%;
+  }
+}
