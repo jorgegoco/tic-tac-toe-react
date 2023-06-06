@@ -4,7 +4,7 @@ import Square from './Square';
 import './board.css';
 
 const Board = ({ squares, winningSquares, onClick }) => (
-  <div className="board">
+  <div className="board" data-testid="board">
     {squares.map((square, i) => (
       <Square
       // eslint-disable-next-line react/no-array-index-key

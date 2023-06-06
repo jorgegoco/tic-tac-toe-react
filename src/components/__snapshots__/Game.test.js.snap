@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clicking on a winning square highlights the winning squares 1`] = `
+<div
+  class="board"
+  data-testid="board"
+>
+  <button
+    class="square winning"
+    type="button"
+  >
+    X
+  </button>
+  <button
+    class="square winning"
+    type="button"
+  >
+    X
+  </button>
+  <button
+    class="square winning"
+    type="button"
+  >
+    X
+  </button>
+  <button
+    class="square "
+    type="button"
+  >
+    O
+  </button>
+  <button
+    class="square "
+    type="button"
+  >
+    O
+  </button>
+  <button
+    class="square "
+    type="button"
+  />
+  <button
+    class="square "
+    type="button"
+  />
+  <button
+    class="square "
+    type="button"
+  />
+  <button
+    class="square "
+    type="button"
+  />
+</div>
+`;
