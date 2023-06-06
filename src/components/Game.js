@@ -11,6 +11,7 @@ const Game = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
   const winner = calculateWinner(board);
+  const winningSquares = winner ? calculateWinner(board).winningSquares : [];
   const handleClick = (i) => {
     const boardCopy = [...board];
     // If user clicks an occupied square or if game is won, return
@@ -32,9 +33,9 @@ const Game = () => {
 
   return (
     <>
-      <Board squares={board} onClick={(i) => handleClick(i)} />
+      <Board squares={board} winningSquares={winningSquares} onClick={(i) => handleClick(i)} />
       <div style={style}>
-        <p>{winner ? `Winner: ${winner}` : `Next Player: ${xIsNext ? 'X' : 'O'}`}</p>
+        <p>{winner ? `Winner: ${winner.winner}` : `Next Player: ${xIsNext ? 'X' : 'O'}`}</p>
         {renderMoves()}
       </div>
     </>

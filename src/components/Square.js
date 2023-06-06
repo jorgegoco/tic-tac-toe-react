@@ -1,17 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './square.css';
 
-const style = {
-  background: 'lightblue',
-  border: '2px solid darkblue',
-  fontSize: '30px',
-  fontWeight: '800',
-  cursor: 'pointer',
-  outline: 'none',
-};
-
-const Square = ({ value, onClick }) => (
-  <button style={style} type="button" onClick={onClick}>
+const Square = ({ value, onClick, isWinning }) => (
+  <button className={`square ${isWinning ? 'winning' : ''}`} type="button" onClick={onClick}>
     {value}
   </button>
 );
@@ -19,6 +11,7 @@ const Square = ({ value, onClick }) => (
 Square.propTypes = {
   value: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+  isWinning: PropTypes.bool.isRequired,
 };
 
 export default Square;

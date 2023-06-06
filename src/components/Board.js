@@ -1,28 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Square from './Square';
+import './board.css';
 
-const style = {
-  border: '4px solid darkblue',
-  borderRadius: '10px',
-  width: '250px',
-  height: '250px',
-  margin: '0 auto',
-  display: 'grid',
-  gridTemplate: 'repeat(3, 1fr) / repeat(3, 1fr)',
-};
-
-const Board = ({ squares, onClick }) => (
-  <div style={style}>
+const Board = ({ squares, winningSquares, onClick }) => (
+  <div className="board">
     {squares.map((square, i) => (
+      <Square
       // eslint-disable-next-line react/no-array-index-key
-      <Square key={i} value={square} onClick={() => onClick(i)} />
+        key={i}
+        value={square}
+        onClick={() => onClick(i)}
+        isWinning={winningSquares.includes(i)}
+      />
     ))}
   </div>
 );
 Board.propTypes = {
   squares: PropTypes.instanceOf(Array).isRequired,
   onClick: PropTypes.func.isRequired,
+  winningSquares: PropTypes.arrayOf(PropTypes.number).isRequired,
 };
 
 export default Board;

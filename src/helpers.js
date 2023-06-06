@@ -18,8 +18,11 @@ const calculateWinner = (squares) => {
 
     // Check if the squares array has a value for each of the winning combinations
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      // Return the winner (X or O)
-      return squares[a];
+      // Return an object with the winner (X or O) and the winning squares
+      return {
+        winner: squares[a],
+        winningSquares: [a, b, c],
+      };
     }
   }
 
