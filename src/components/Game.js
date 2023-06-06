@@ -38,7 +38,7 @@ const Game = () => {
   const renderMoves = () => (
     <ul className="game-moves">
       {history.map((_step, move) => {
-        const destination = move ? `Go to move #${move}` : 'Go to start';
+        const destination = move ? `Go to move #${move}` : 'Start';
         return (
           // eslint-disable-next-line react/no-array-index-key
           <li key={move}>

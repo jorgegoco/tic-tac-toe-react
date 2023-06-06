@@ -6,5 +6,5 @@
   margin: 0 auto;
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
