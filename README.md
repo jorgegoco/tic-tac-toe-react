@@ -23,9 +23,9 @@
 - [📝 License](#license)
 
 
-# 📖 Tic-Tac-toe-React <a name="about-project"></a>
+# 📖 Tic-Tac-Toe-React <a name="about-project"></a>
 
-**Tic-Tac-toe-React** is a game built using React Hooks. The game is played on a 3×3 grid, and the player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+**Tic-Tac-Toe-React** is a game built using React Hooks. The game is played on a 3×3 grid, and the player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,8 +44,6 @@
 - **The game is played on a 3×3 grid.**
 - **The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.**
 - **The game can keep track of the moves history and allow players to go back to previous moves.**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -79,7 +77,7 @@ Install this project with:
 
 ```sh
   cd tic-tac-toe-react
-  npm install install
+  npm install 
 ```
 
 ### Usage
@@ -117,15 +115,11 @@ You can deploy this project using:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorgegoco/)
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Add a feature that allows players to choose their own symbols.**
 - [ ] **Add a feature that allows players to play against the computer.**
 - [ ] **Add a feature that allows players to play against each other online.**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -133,20 +127,13 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/jorgegoco/tic-tac-toe-react/issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project...give it a ⭐️!
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank [@microverse](https://www.microverse.org/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
